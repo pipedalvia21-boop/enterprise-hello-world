@@ -1,0 +1,23 @@
+{
+  "name": "enterprise-hello-world",
+  "version": "1.0.0",
+  "description": "QPC Enterprise Hello World — baseline app with CI/CD, testing, and linting",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "jest --coverage",
+    "lint": "eslint src/ server/ tests/",
+    "format": "prettier --write src/ server/ tests/",
+    "prepare": "husky install"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "lines": 80
+      }
+    }
+  },
+  "keywords": [],
+  "author": "Felipe Dalvia",
+  "license": "ISC"
+}

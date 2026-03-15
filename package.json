@@ -5,9 +5,9 @@
   "main": "server/index.js",
   "scripts": {
     "start": "node server/index.js",
-    "test": "jest --coverage",
-    "lint": "eslint src/ server/ tests/",
-    "format": "prettier --write src/ server/ tests/",
+    "test": "npx jest --coverage",
+    "lint": "npx eslint src/ server/ tests/",
+    "format": "npx prettier --write src/ server/ tests/",
     "prepare": "husky install"
   },
   "jest": {
